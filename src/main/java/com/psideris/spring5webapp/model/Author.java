@@ -14,10 +14,6 @@ import javax.persistence.ManyToMany;
  * @author psideris
  *
  */
-/**
- * @author psideris
- *
- */
 @Entity
 public class Author {
 
