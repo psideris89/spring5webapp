@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Spring 5</title>
+</head>
+<body>
+	<h1>Authors List</h1>
+	<div>
+		<table id="authorsTable">
+			<tr>
+				<th>Id</th>
+				<th>First name</th>
+				<th>Last name</th>
+			</tr>
+			<tr th:each="author : ${authors}">
+				<td th:text="${author.id}">123</td>
+				<td th:text="${author.firstName}">Default First Name</td>
+				<td th:text="${author.lastName}">Default Last Name</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
